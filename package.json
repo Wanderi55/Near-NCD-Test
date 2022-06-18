@@ -1,0 +1,28 @@
+{
+  "name": "near-ncd-test",
+  "packageManager": "yarn@3.2.1",
+  "devDependencies": {
+    "near-sdk-as": "^3.2.3"
+  },
+  "description": "First Smart Contract Project on Near Protocol In the Learning Path",
+  "version": "1.0.0",
+  "main": "index.ts",
+  "scripts": {
+    "dev": "watch -d -n 1 'clear && yarn test'",
+    "test": "yarn asp -f unit.spec",
+    "clean": "rm -rf ./build && rm -rf ./neardev",
+    "build": "asb --target debug",
+    "build:release": "asb",
+    "asp": "asp --verbose --nologo"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Wanderi55/Near-NCD-Test.git"
+  },
+  "author": "Johnson Wahome",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Wanderi55/Near-NCD-Test/issues"
+  },
+  "homepage": "https://github.com/Wanderi55/Near-NCD-Test#readme"
+}
