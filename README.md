@@ -25,22 +25,27 @@ Once you have authorised the account go back to your CMD and inopuit the account
 near create-account mycontract.myaccount.testnet --masterAccount myaccount.testnet --initialBalance 5
 (This is to create a subaccount to deploy the smart contract)
 
-### For windows 
+### For windows but should run well also in Linux via the linux commands
 run yarn
 
 then run yarn build or yarn run build
 
 once the build folder (build/debug/nameofmyproject.wasm) is created with the wasm file you can test with the following commands:
 
-to Deploy:->
+#### to Deploy:->
+
 near deploy --accountId mycontract.myaccount.testnet --wasmFile build/foldername/${WASM_FILE_NAME}
 
-to call(Create a new product in the blockchain):->
-near call ${CONTRACT_ACCOUNT_ID} ${METHOD_NAME} ${PAYLOAD} --accountId ${ACCOUNT_ID}
+#### to call(Create a new product in the blockchain):->
+
+near call \${CONTRACT_ACCOUNT_ID} \${METHOD_NAME} \${PAYLOAD}  --accountId \${ACCOUNT_ID}
+
 E.g: near call mytest.accname.testnet setProduct "{\"id\": \"0\", \"productName\": \"tea\"}" --accountId accname.testnet
 
-to view:->
-near view ${CONTRACT_ACCOUNT_ID} ${METHOD_NAME} ${PAYLOAD}
+#### to view:->
+
+near view \${CONTRACT_ACCOUNT_ID} \${METHOD_NAME} \${PAYLOAD}
+
 E.g: near view mytest.accname.testnet getProduct '{\"id\": \"0\"}'
 
 
