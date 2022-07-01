@@ -2,6 +2,7 @@ import { PersistentUnorderedMap, u128, context } from "near-sdk-as";
 
 @nearBindgen
 export class Product {
+   
     id: string;
     name: string;
     description: string;
@@ -24,6 +25,7 @@ export class Product {
     public incrementSoldAmount(): void {
         this.sold = this.sold + 1;
     }
+
 }
 
 export const listedProducts = new PersistentUnorderedMap<string, Product>("LISTED_PRODUCTS");
