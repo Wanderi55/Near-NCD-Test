@@ -49,4 +49,4 @@ near view \${CONTRACT_ACCOUNT_ID} \${METHOD_NAME} \${PAYLOAD}
 E.g: near view mytest.accname.testnet getProduct '{\"id\": \"0\"}'
 
 
-Comments and feedback will be greatly appreciated as am still in the learning process of the Protocol and hope to build one of my solutions on the Same very soon. Thus this prtoject is mainly for tests and learning only at the moment unless otherwise stated
+Comments and feedback will be greatly appreciated
