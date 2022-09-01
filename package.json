@@ -26,6 +26,7 @@
   },
   "homepage": "https://github.com/Wanderi55/Near-NCD-Test#readme",
   "dependencies": {
+    "near-cli": "^3.4.2",
     "process": "^0.11.10",
     "react-scripts": "^4.0.3"
   }
