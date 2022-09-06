@@ -30,7 +30,7 @@ export function buyProduct(productId: string): void {
   listedProducts.set(product.id, product);
 }
 
-export function removeProduct(product: Product): void {
+export function deleteProduct(product: Product): void {
     let storedProduct = listedProducts.get(product.id);
     if (storedProduct == null) {
         throw new Error(`a product with ${product.id} doesn't exists`);

@@ -1,4 +1,5 @@
 {
+  "homepage": "https://wanderi55.github.io/Near-NCD-Test",
   "name": "near-ncd-test",
   "packageManager": "yarn@3.2.1",
   "devDependencies": {
@@ -13,7 +14,9 @@
     "clean": "rm -rf ./build && rm -rf ./neardev",
     "build": "asb --target debug",
     "build:release": "asb",
-    "asp": "asp --verbose --nologo"
+    "asp": "asp --verbose --nologo",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
   },
   "repository": {
     "type": "git",

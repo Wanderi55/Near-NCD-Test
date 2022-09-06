@@ -27,5 +27,4 @@ export class Product {
     }
 
 }
-
 export const listedProducts = new PersistentUnorderedMap<string, Product>("LISTED_PRODUCTS");
